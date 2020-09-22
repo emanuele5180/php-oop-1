@@ -19,6 +19,12 @@
     font-weight: bold;
   }
 
+  .pluto {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
 
 </style>
 
@@ -62,13 +68,20 @@
     $user2 = new User('Topolino','paperino',20,"topolino@gmail.com");
 
     // echo $user1 -> getDetails();
+    ?>
 
-    echo $user1 . '<hr>';
-    echo $user2;
+    <div class="pluto">
+      <?php
+      echo $user1;
+      ?>
+    </div>
 
+    <div class="pluto">
+      <?php
+      echo $user2;
+      ?>
 
-
-  ?>
+    </div>
 
 
 
